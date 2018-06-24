@@ -4,3 +4,7 @@ def my_collect(array)
   a=Array.new
   while i<array.size
     a[i]= yield array[i]
+    i+=1
+  end
+  a
+end
